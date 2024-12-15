@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\varni\Desktop\5th sem\mini project\Mini_project\job-title-prediction\venv
+set VIRTUAL_ENV=C:\Users\varni\Desktop\5th sem\mini project\mini-backend\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
