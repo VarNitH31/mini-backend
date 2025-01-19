@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                          Int      @id @default(autoincrement())
+  emailId                     String   
+  Communication_skills        Float
+  Openness                    Float
+  Conscientousness            Float
+  Extraversion                Float
+  Agreeableness               Float
+  Emotional_Range             Float
+  Conversation                Float
+  Openness_to_Change          Float
+  Hedonism                    Float
+  Self_enhancement            Float
+  Self_transcendence          Float
+  Database_Fundamentals       Float
+  Computer_Architecture       Float
+  Distributed_Computing_Systems Float
+  Cyber_Security              Float
+  Networking                  Float
+  Software_Development        Float
+  Programming_Skills          Float
+  Project_Management          Float
+  Computer_Forensics_Fundamentals Float
+  Technical_Communication     Float
+  AI_ML                       Float
+  Software_Engineering        Float
+  Business_Analysis           Float
+  Data_Science                Float
+  Troubleshooting_skills      Float
+  Graphics_Designing          Float
+  predictedJob                String
+  interestedJob               String
+   // @@map("users") // Optional: Maps this model to a specific table name in the database
+}
